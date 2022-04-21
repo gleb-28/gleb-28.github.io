@@ -1,0 +1,300 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1444px) {
+	.portfolio__slide-switcher{
+		margin: 0 auto;
+	}
+	
+	
+
+}
+@media (max-width : 1400px) {
+	
+
+}
+@media (max-width : 1300px) {
+	.hero__content{
+		margin-right: 104px;
+	}
+	.about__decoration--sign{
+		transform: scale(0.8);
+		right: -4.4%;
+		bottom: 50.4%;
+	}
+}
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+	body{
+		font-size: 20px;
+	}
+	.about__decoration--sign{
+		/*transform: scale(0.6);
+		right: -9.5%;
+		bottom: 47.3%;*/
+		display: none;
+	}
+	.hero__drawing{
+		transform: scale(0.9);
+	} 
+	.hero__title{
+		font-size: 56px;
+	}
+	.about__title{
+		margin-bottom: 30px
+	}
+	.portfolio__slide{
+		padding: 20px 0;
+	}
+
+}
+@media (max-width : 1080px) {
+	.hero__content{
+		margin-right: 52px;
+	}
+	
+	
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+	.hero__drawing{
+		transform: scale(0.8);
+
+	}
+	.hero__btn--contact{
+		margin-top: 28px;
+	}
+	.about__flex{
+		flex-direction: column-reverse;
+	}
+	.about__photo{
+		/*min-width: 50%;
+		max-width: 70%;*/
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.about__title{
+		margin: 0 auto;
+		
+	}
+	.about__text-content{
+		margin-bottom: 28px;
+		max-width: 100%;
+	}
+	.portfolio__body{
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
+	.portfolio__slide-switcher{
+		margin: 40px auto 0;
+		white-space: nowrap;
+
+	}
+	.portfolio__slide-switch{
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+	.portfolio__flex{
+		/*flex-wrap: wrap;*/
+		flex-direction: column;
+		justify-content: space-between;
+		/*align-items: center;*/
+		
+	}
+	.portfolio__title{
+		margin: 0 auto;
+		
+	}
+	.portfolio__text-content{
+		max-width: 100%;
+	}
+
+
+
+}
+@media (max-width : 888px) {
+	.hero__content{
+		margin-right: 5px;
+	}
+
+	
+}
+
+@media (max-width : 845px) {
+	.header__lang-switcher{
+		position: static;
+		display: block;
+		margin: 12px auto 0px;
+	}
+	.header__lang-switch-wrapper {
+		position: static;
+		/*display: block;*/
+		margin: 8px auto;
+	
+	}	
+
+	.hero__flex {	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+	.header{
+	height: 333px;
+	}
+	.header__lang-switcher{
+		margin: 28px auto 0px;
+	}
+	.hero__content{
+		margin-top: -65px;
+	}
+	.hero__text {
+	margin-top: 28px;
+	}
+	.hero__btn--contact{
+		margin-top: 28px;
+	}
+	.hero__drawing {
+		max-width: 100%;
+		margin: 0 auto;
+		margin-top: 56px;
+		transform: scale(1);
+		
+
+	}
+	.wrapper{
+		padding-bottom: 0;
+	}
+	.about__photo{
+		max-width: 100%;
+	}
+}
+@media (max-width : 810px){
+	.portfolio__slide-switcher{
+		white-space: normal;
+	}
+}
+@media (max-width : 605px){
+	.container{
+		padding: 20px;
+	}
+	.header__container{
+		padding-top: 0;
+	}
+	.contact__container{
+		padding-bottom: 0;
+	}
+
+}
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+	.btn--arrow{
+		display: none;
+	}
+	.header{
+		height: 270px;
+	}
+}
+@media (max-width : 445px) {
+	.header{
+		height: 222px;
+	}
+	.hero__drawing{
+		
+		/*margin: 0;*/
+
+	}
+	.hero__title {
+	font-size: 40px;
+	}
+	.about__title{
+		font-size: 36px;
+	}
+	.portfolio__title{
+		font-size: 36px;
+	}
+	.contact__title{
+		font-size: 30px;
+	}
+}
+@media (max-width : 445px){
+	.portfolio__slide-switch{
+		margin: 0 auto;
+	}
+	.portfolio__slide-switch:not(:last-child){
+		margin-right: 0;
+		margin-bottom: 8px;
+}
+}
+@media (max-width: 375px){
+	body{
+		font-size: 18px;
+	}
+	.contact__decoration--me{
+	display: none;
+	}
+	.contact__btn{
+	margin-bottom: 100px;
+	}
+	
+}
+@media (max-width : 320px) {
+
+	.hero__drawing{
+		
+		/*margin-top: -45px;*/
+	}
+	.hero__title {
+	font-size: 36px;
+	}
+	.hero__text{
+		margin-bottom: 0;
+	}
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.hero{
+		padding-bottom: 51px;
+	}
+	.container{
+		
+		padding: 51px 104px 51px;
+	}
+	.header__container{
+	padding: 0;
+
+	}
+	.contact__container{
+	padding-bottom: 0;
+	}
+}

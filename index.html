@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>My Personal Website | Gleb28</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="img/favicon.svg">
+
+	<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">	
+
+</head>
+
+<body>
+	<main class="main">
+		<div class="wrapper">
+			<header class="header">
+				<div class="container header__container">
+					<img class="header__logo" src="./img/logo.svg" alt="logo">
+					<button class="header__lang-switcher"></button>
+
+					<div class="header__lang-switch-wrapper">
+						<a href="#" class="header__lang-switch header__lang-switch--disabled">en</a>
+						<a href="#contact" class="header__lang-switch">ru</a>
+					</div>
+				</div>
+			</header>
+			<div class="hero">
+				<div class="hero__flex flex">
+					<div class="hero__content">
+						<h1 class="hero__title">hello world!</h1>
+						<p class="hero__text">welcome to my website..</p>
+						<a class="btn hero__btn--contact" href="#contact">contact me</a>
+					</div>
+					<img class="hero__drawing" src="./img/pic_drawing.jpg" alt="drawing">
+				</div>
+				<a class="btn--arrow hero__btn--arrow" href="#about"></a>
+			</div>
+		</div>
+		
+
+		<section class="about" id="about">
+			<div class="container">
+			<h2 class="about__title">about me:</h2>
+			<div class="about__flex flex">
+				<img class="about__photo" src="./img/pic_my-photo.jpg" alt="my photo">
+				<div class="about__text-content text-content">
+					<p class="about__text text">My name is Gleb and I am a web developer.</p>
+					<p class="about__text text">Well, I hope so..</p>
+					<p class="about__text text">Here will be some bio, information about my skills, interests, what inspires me the most, my CV and maybe something else.</p>
+				</div>
+			</div>
+			<img class="about__decoration--sign" src="./img/decoration-elem_sign.svg" alt="sign">
+			<a class="btn--arrow about__btn--arrow" href="#portfolio"></a>
+			</div>
+		</section>
+
+
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2 class="portfolio__title">my portfolio:</h2>
+				<div class="portfolio__body">
+				<!-- Slider main container -->
+				<div class="swiper">
+				  <!-- Additional required wrapper -->
+				  <div class="swiper-wrapper">
+				    	<!-- Slides -->
+				    	<div class="swiper-slide portfolio__slide">
+			    			<div class="portfolio__flex flex">
+				    			<div class="text-content portfolio__text-content">
+				    				<p class="portfolio__text text">This website is fully designed and created by me.</p>
+				    				<p class="portfolio__text text">Do you like it?</p>
+				    				<p class="portfolio__text text">I Hope you do.</p>
+				    			</div>
+				    			<div class="portfolio__media-content">
+				    				<img class="portfolio__pic" src="img/pic_portfolio_this-website.png" alt="image">
+				    			</div>
+				    		</div>
+				    	</div>
+
+					    <div class="swiper-slide portfolio__slide">
+					    	<div class="portfolio__flex flex">
+				    			<div class="text-content portfolio__text-content">
+				    				<p class="portfolio__text text">Here will be my future projects.</p>
+				    				<p class="portfolio__text text">But for now, happy axolotl is playing the piano underwater.</p>
+				    			</div>
+				    			<div class="portfolio__media-content">
+				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+				    			</div>
+				    		</div>
+					    </div>
+
+					    <div class="swiper-slide portfolio__slide">
+					    	<div class="portfolio__flex flex">
+				    			<div class="text-content portfolio__text-content">
+				    				<p class="portfolio__text text">More axolotls!</p>
+				    			</div>
+				    			<div class="portfolio__media-content flex">
+				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+				    			</div>
+				    			<div class="portfolio__media-content flex">
+				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+				    			</div>
+				    			<div class="portfolio__media-content flex">
+				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+				    			</div>
+					    	</div>
+				    	</div>
+				  </div>			 
+				</div>
+				<div class="portfolio__slide-switcher">
+						<a href="#!" id="s1" class="portfolio__slide-switch portfolio__slide-switch--active slide-to1">this website</a>
+						<a href="#!" id="s2" class="portfolio__slide-switch slide-to2">another website</a>
+						<a href="#!" id="s3" class="portfolio__slide-switch slide-to3">another one website</a>
+					</div>	
+			</div>
+					<a class="portfolio__btn--arrow btn--arrow" href="#contact"></a>
+			</div>
+		</section>
+
+
+		<section class="contact" id="contact">
+			<div class="container contact__container">
+				<h3 class="contact__title">you can get in touch with me:</h3>
+					<form name="contact" class="contact__form" action="" method="post">
+						<input class="contact__input--name" type="text" name="name" placeholder="your name.." required>
+						<input class="contact__input--social" type="text" name="social" placeholder="your mail or social network.." required>
+						<textarea class="contact__input--message" name="message" placeholder="your message.." required ></textarea>
+
+						<button class="btn contact__btn" name="submit">send</button>
+					</form>
+					<a class="btn--arrow contact__btn--arrow" href="#top"></a>
+			</div>
+					<img class="contact__decoration--me" src="./img/decoration-elem_me.svg" alt="drawing">
+		</section>
+	</main>	
+
+	<footer class="footer">
+		<small class="footer__text">&copy; GLEB28.com, 2022</small>
+	</footer>
+
+
+	
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>
+
+
