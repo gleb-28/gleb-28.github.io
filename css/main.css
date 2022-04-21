@@ -85,50 +85,45 @@ body {
 	margin: 0 auto;
 	
 }
-
-.header__lang-switcher {
-	width: 24px;
-	height: 24px;
-	background-image: url(../img/icon_globe.svg);	
-	background-repeat: no-repeat;
+.header__lang-switcher{
 	position: absolute;
 	top: 28px;
 	right: 104px;
+}
+.lang-switcher__button {
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icon_globe.svg);	
+	background-repeat: no-repeat;	
 	border: 0;
 	background-color: transparent;
 	transition: 0.1s ease;
 	cursor: pointer;
 
 }
-.header__lang-switch-wrapper {
-	display: none;
-	margin-top: 8px;
-	position: absolute;
-	top: 48px;
-	right: 104px;
-	width: 24px;
-	background-color: var(--secondarycolor);
-	text-align: center;
-	z-index: 10;
+.lang-switcher__button:hover{
+	transform: scale(1.1);
 }
-.header__lang-switch {
+.lang-switcher__button:active{
+	opacity: 0.5;
+}
+
+.lang-switcher__wrapper {
+	text-align: center;
+	padding: 2px;
+
+}
+.lang-switcher__link {
+	padding: 4px;
 	color: var(--primarycolor);
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 16px;	
-	line-height: 24px;
-	z-index: 2;
-}
-.header__lang-switch--disabled{
-	color: rgba(0, 0, 0, 0.5);
-	cursor: default;
-}
 
-.header__lang-switcher:hover{
-	transform: scale(1.1);
 }
-.header__lang-switcher:active{
-	opacity: 0.5;
+.lang-switcher__link:hover {
+	background-color: var(--primarycolor);
+	color: var(--secondarycolor);
+
 }
 
 .hero {

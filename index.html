@@ -15,6 +15,7 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
+	<link rel="stylesheet" href="libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">	
 
@@ -26,11 +27,12 @@
 			<header class="header">
 				<div class="container header__container">
 					<img class="header__logo" src="./img/logo.svg" alt="logo">
-					<button class="header__lang-switcher"></button>
-
-					<div class="header__lang-switch-wrapper">
-						<a href="#" class="header__lang-switch header__lang-switch--disabled">en</a>
-						<a href="#contact" class="header__lang-switch">ru</a>
+					<div class="header__lang-switcher dropdown">
+  						<button class="lang-switcher__button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+  						<ul class="lang-switcher__wrapper dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						    <li><a class="lang-switcher__link dropdown-item disabled" href="#">en</a></li>
+						    <li><a class="lang-switcher__link dropdown-item" href="ru/index.html">ru</a></li>
+  						</ul>
 					</div>
 				</div>
 			</header>
@@ -149,8 +151,8 @@
 	</footer>
 
 
-	
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script defer src="libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.js" defer></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 	<script src="js/main.js" defer></script>
 </body>
 </html>

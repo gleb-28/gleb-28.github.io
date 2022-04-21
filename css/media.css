@@ -28,6 +28,11 @@
 	body{
 		font-size: 20px;
 	}
+	.header__lang-switcher{
+		position: static;
+		display: block;
+		margin: 12px auto 0px;
+	}
 	.about__decoration--sign{
 		/*transform: scale(0.6);
 		right: -9.5%;
@@ -123,18 +128,6 @@
 }
 
 @media (max-width : 845px) {
-	.header__lang-switcher{
-		position: static;
-		display: block;
-		margin: 12px auto 0px;
-	}
-	.header__lang-switch-wrapper {
-		position: static;
-		/*display: block;*/
-		margin: 8px auto;
-	
-	}	
-
 	.hero__flex {	
 	flex-direction: column;
 	align-items: center;
