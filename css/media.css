@@ -67,7 +67,7 @@
 		transform: scale(0.8);
 
 	}
-	.hero__btn--contact{
+	.hero__button--contact{
 		margin-top: 28px;
 	}
 	.about__flex{
@@ -145,7 +145,7 @@
 	.hero__text {
 	margin-top: 28px;
 	}
-	.hero__btn--contact{
+	.hero__button--contact{
 		margin-top: 28px;
 	}
 	.hero__drawing {
@@ -182,7 +182,7 @@
 }
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
-	.btn--arrow{
+	.button--arrow{
 		display: none;
 	}
 	.header{
@@ -227,7 +227,7 @@
 	.contact__decoration--me{
 	display: none;
 	}
-	.contact__btn{
+	.contact__button{
 	margin-bottom: 100px;
 	}
 	
