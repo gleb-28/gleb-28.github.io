@@ -304,6 +304,9 @@ body {
 .portfolio__flex{
 	align-items: center;
 }
+.portfolio__flex--flex-start{
+	align-items: flex-start;
+}
 .portfolio__media-content{
 	max-width: 788px;
 	max-height: 600px;
