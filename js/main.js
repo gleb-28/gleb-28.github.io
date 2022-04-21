@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
  
   simulateTouch: false,
-
+  autoHeight: true,
 
 
 });
