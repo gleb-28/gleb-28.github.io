@@ -49,11 +49,11 @@ body {
 	align-items: center;
 	position: relative;
 	overflow: hidden;
+	min-height: calc(100vh - 1.75rem);
 }
 
 .wrapper{
-	/*min-height: 100vh;*/
-	min-height: 100%;
+	/*min-height: 100%;*/
 
 
 }
@@ -97,7 +97,7 @@ body {
 	background-repeat: no-repeat;	
 	border: 0;
 	background-color: transparent;
-	transition: 0.1s ease;
+	transition: all 0.1s ease;
 	cursor: pointer;
 
 }
@@ -118,6 +118,7 @@ body {
 	color: var(--primarycolor);
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: all 0.1s ease;
 
 }
 .lang-switcher__link:hover {
@@ -169,18 +170,16 @@ body {
 	font-size: 20px;	
 	line-height: 23px;
 	cursor: pointer;
+	transition: all 0.1s ease;
 }
 .button:hover {
 	color: var(--secondarycolor);
-	box-shadow: 3px 3px 1px 1px #D43024;
-	transition: 0.1s ease;
+
 }
 .button:active {
 	position: relative;
 	top: 3px;
 	left: 3px;
-	box-shadow: none;
-	transition: 0.1s ease;
 }
 
 .hero__button--contact {
@@ -202,7 +201,7 @@ body {
 	display: inline-block;
 	background-position: center;
 	background-size: cover;
-	transition: 0.1s ease;
+	transition: all 0.1s ease;
 }
 .button--arrow:hover{
 	transform: scale(1.1);
@@ -340,6 +339,7 @@ body {
 	color: rgba(255, 255, 255, 0.7);
 	padding-bottom: 3px;
 	white-space: nowrap;
+	transition: all 0.1s ease;
 
 }
 .portfolio__slide-switch:not(:last-child){
@@ -350,16 +350,13 @@ body {
 }
 .portfolio__slide-switch:hover {
 	color: var(--secondarycolor);
-	text-shadow: 3px 3px 1px #D43024;
-	transition: 0.1s ease;
 }
 .portfolio__slide-switch:active {
 	color: var(--secondarycolor);
 	position: relative;
 	top: 3px;
 	left: 3px;
-	text-shadow: none;
-	transition: 0.1s ease;
+
 	
 }
 .portfolio__slide-switch--active{

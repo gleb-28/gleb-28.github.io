@@ -258,6 +258,20 @@
 @media (min-width : 576px) {
 
 }
+@media (min-width : 600px) {
+	.button:hover {
+	box-shadow: 3px 3px 1px 1px #D43024;
+	}
+	.button:active {
+	box-shadow: none;
+	}
+	.portfolio__slide-switch:hover {
+	text-shadow: 3px 3px 1px #D43024;
+	}
+	.portfolio__slide-switch:active {
+	text-shadow: none;
+	}
+}
 
 /* Medium (md) */
 @media (min-width : 768px) {

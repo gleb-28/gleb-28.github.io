@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
  
-  simulateTouch: false,
+  // simulateTouch: false,
   autoHeight: true,
 
 
@@ -34,16 +34,23 @@ document.querySelector('.slide-to3').addEventListener('click', () => {
 });
 
 
+// var switcher = document.getElementById("ss");
+// var btns = switcher.getElementsByClassName('portfolio__slide-switch');
+//   for (var i = 0; i < btns.length; i++){
+//       btns[i].addEventListener('click', function(){
+//         var current = document.getElementsByClassName('portfolio__slide-switch--active');
+//         current[0].className = current[0]className.replace('portfolio__slide-switch--active');
+//         swiper.slideTo(this);
+//         this.className += 'portfolio__slide-switch--active';
+//       });
+//   };
 
-// document.getElementsByClassName('.contact__input--name').addEventListener("focus", function(e){
-//   document.getElementsByClassName('.contact__input--name').placeholder = "";
-// })
 
-// document.querySelector('.header__lang-switcher').addEventListener('click', function (e) => {
-//   document.querySelector('.header__lang-switch-wrapper').style.display = 'block';
-//   document.querySelector('.header__lang-switcher').style.display = 'none';
-
-
-
-// });
-
+// function activeLink(){
+//   switcher.forEach( link =>
+//     link.classList.remove('portfolio__slide-switch--active'));
+//     swiper.slideTo(this);
+//     this.classList.add('portfolio__slide-switch--active');
+//   }
+//   switcher.forEach( link =>
+//   link.addEventListener('click',activeLink));
