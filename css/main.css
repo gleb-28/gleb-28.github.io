@@ -202,12 +202,11 @@ img{
 
 .button {	
 	font-family: var(--mainfont);
-	width: 168px;
 	padding: 16px 24px;
 	background-color: var(--primarycolor);
 	text-decoration: none;
 	color: var(--secondarycolor);
-	font-size: 20px;	
+	font-size: 20px;
 	line-height: 0.9rem;
 	cursor: pointer;
 	transition: all 0.1s ease;
@@ -488,6 +487,7 @@ img{
 .contact__button {
 	margin: 0 auto;
 	border: none;
+	width: 168px;
 /*	width: 7rem;*/
 /*	padding: 0.7rem 1 rem;*/
 }
