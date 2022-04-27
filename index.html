@@ -13,7 +13,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css" defer/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">	
 
@@ -27,7 +27,7 @@
 					<img class="header__logo" src="./img/logo.svg" alt="logo">
 					<div class="header__lang-switcher">
   						<button class="lang-switcher__button" type="button"></button>
-  						<ul class="lang-switcher__wrapper" uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-top-small;">
+  						<ul class="lang-switcher__wrapper" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-top-small;">
 						    <li><a class="lang-switcher__link uk-disabled" href="#">en</a></li>
 						    <li><a class="lang-switcher__link" href="ru/index.html">ru</a></li>
   						</ul>
@@ -89,7 +89,7 @@
 				    	</li>
 
 					    <li class="portfolio__slide uk-animation-slide-right">
-					    	<div class="portfolio__flex flex">
+					    	<div class="portfolio__flex flex portfolio__flex--flex-start">
 				    			<div class="text-content portfolio__text-content">
 				    				<p class="portfolio__text text">Here will be my future projects.</p>
 				    				<p class="portfolio__text text">But for now, happy axolotl is playing the piano underwater.</p>
@@ -128,7 +128,7 @@
 					<h3 class="animation--fly-in">thank you! your message has been sent!</h3>
 				<div class="contact__body">
 					<h3 class="contact__title">you can get in touch with me:</h3>
-						<form name="contact" class="contact__form" action="" method="post">
+						<form name="contact" class="contact__form" action="#" method="post">
 							<input class="contact__input--name" type="text" name="name" id="name" placeholder="your name.." required>
 							<input class="contact__input--social" type="text" name="social" id="social" placeholder="your mail or social network.." required>
 							<textarea class="contact__input--message" name="message" id="message" placeholder="your message.." required ></textarea>
