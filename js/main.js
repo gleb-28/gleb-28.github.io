@@ -1,37 +1,55 @@
-const swiper = new Swiper('.swiper', {
+// const swiper = new Swiper('.swiper', {
  
-  // simulateTouch: false,
-  autoHeight: true,
+//   simulateTouch: false,
+//   autoHeight: true,
 
+
+// });
+
+
+// document.querySelector('.slide-to1').addEventListener('click', () => {
+//   document.getElementById("s2").classList.remove('portfolio__slide-switch--active');
+//   document.getElementById("s3").classList.remove('portfolio__slide-switch--active');
+//   swiper.slideTo(0);
+//   document.querySelector('.slide-to1').classList.add('portfolio__slide-switch--active');
+
+
+// });
+
+// document.querySelector('.slide-to2').addEventListener('click', () => {
+//   document.getElementById("s1").classList.remove('portfolio__slide-switch--active');
+//   document.getElementById("s3").classList.remove('portfolio__slide-switch--active');
+//   swiper.slideTo(1);
+//   document.querySelector('.slide-to2').classList.add('portfolio__slide-switch--active');
+
+
+// });
+
+// document.querySelector('.slide-to3').addEventListener('click', () => {
+//   document.getElementById("s1").classList.remove('portfolio__slide-switch--active');
+//   document.getElementById("s2").classList.remove('portfolio__slide-switch--active');
+//   swiper.slideTo(2);
+//   document.querySelector('.slide-to3').classList.add('portfolio__slide-switch--active');
+
+// });
+
+
+let switcher = UIkit.switcher('.uk-switcher', {
+    
+  swiping: true,
 
 });
 
 
-document.querySelector('.slide-to1').addEventListener('click', () => {
-  document.getElementById("s2").classList.remove('portfolio__slide-switch--active');
-  document.getElementById("s3").classList.remove('portfolio__slide-switch--active');
-  swiper.slideTo(0);
-  document.querySelector('.slide-to1').classList.add('portfolio__slide-switch--active');
+UIkit.switcher('swiping', 'true');
 
 
-});
-
-document.querySelector('.slide-to2').addEventListener('click', () => {
-  document.getElementById("s1").classList.remove('portfolio__slide-switch--active');
-  document.getElementById("s3").classList.remove('portfolio__slide-switch--active');
-  swiper.slideTo(1);
-  document.querySelector('.slide-to2').classList.add('portfolio__slide-switch--active');
 
 
-});
 
-document.querySelector('.slide-to3').addEventListener('click', () => {
-  document.getElementById("s1").classList.remove('portfolio__slide-switch--active');
-  document.getElementById("s2").classList.remove('portfolio__slide-switch--active');
-  swiper.slideTo(2);
-  document.querySelector('.slide-to3').classList.add('portfolio__slide-switch--active');
 
-});
+
+
 
 
 // var switcher = document.getElementById("ss");

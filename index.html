@@ -13,9 +13,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
-	<link rel="stylesheet" href="libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">	
 
@@ -27,11 +25,11 @@
 			<header class="header">
 				<div class="container header__container">
 					<img class="header__logo" src="./img/logo.svg" alt="logo">
-					<div class="header__lang-switcher dropdown">
-  						<button class="lang-switcher__button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-  						<ul class="lang-switcher__wrapper dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						    <li><a class="lang-switcher__link dropdown-item disabled" href="#">en</a></li>
-						    <li><a class="lang-switcher__link dropdown-item" href="ru/index.html">ru</a></li>
+					<div class="header__lang-switcher">
+  						<button class="lang-switcher__button" type="button"></button>
+  						<ul class="lang-switcher__wrapper" uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-top-small;">
+						    <li><a class="lang-switcher__link uk-disabled" href="#">en</a></li>
+						    <li><a class="lang-switcher__link" href="ru/index.html">ru</a></li>
   						</ul>
 					</div>
 				</div>
@@ -71,12 +69,13 @@
 			<div class="container">
 				<h2 class="portfolio__title">my portfolio:</h2>
 				<div class="portfolio__body">
-				<!-- Slider main container -->
-				<div class="swiper">
-				  <!-- Additional required wrapper -->
-				  <div class="swiper-wrapper">
-				    	<!-- Slides -->
-				    	<div class="swiper-slide portfolio__slide">
+					<ul class="portfolio__slide-switcher" data-uk-switcher>
+						<li class="portfolio__slide-switch"><a onclick="UIkit.switcher('#slider').show(0);" href="#" class="portfolio__slide-link">this website</a></li>
+						<li class="portfolio__slide-switch"><a onclick="UIkit.switcher('#slider').show(1);" href="#" class="portfolio__slide-link">another website</a></li>
+						<li class="portfolio__slide-switch"><a onclick="UIkit.switcher('#slider').show(2);" href="#" class="portfolio__slide-link">another one website</a></li>
+					</ul>
+				  	<ul class="portfolio__slider uk-switcher" id="slider">
+				    	<li class="portfolio__slide uk-animation-slide-right">
 			    			<div class="portfolio__flex flex portfolio__flex--flex-start">
 				    			<div class="text-content portfolio__text-content">
 				    				<p class="portfolio__text text">This website is fully designed and created by me.</p>
@@ -87,9 +86,9 @@
 				    				<img class="portfolio__pic" src="img/pic_portfolio_this-website.png" alt="image">
 				    			</div>
 				    		</div>
-				    	</div>
+				    	</li>
 
-					    <div class="swiper-slide portfolio__slide">
+					    <li class="portfolio__slide uk-animation-slide-right">
 					    	<div class="portfolio__flex flex">
 				    			<div class="text-content portfolio__text-content">
 				    				<p class="portfolio__text text">Here will be my future projects.</p>
@@ -99,9 +98,9 @@
 				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
 				    			</div>
 				    		</div>
-					    </div>
+					    </li>
 
-					    <div class="swiper-slide portfolio__slide">
+					    <li class="portfolio__slide uk-animation-slide-right">
 					    	<div class="portfolio__flex flex">
 				    			<div class="text-content portfolio__text-content">
 				    				<p class="portfolio__text text">More axolotls!</p>
@@ -116,15 +115,9 @@
 				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
 				    			</div>
 					    	</div>
-				    	</div>
-				  </div>			 
+				    	</li>			 
+					</ul>
 				</div>
-				<div class="portfolio__slide-switcher" id="ss">
-						<a href="#!" id="s1" class="portfolio__slide-switch portfolio__slide-switch--active slide-to1">this website</a>
-						<a href="#!" id="s2" class="portfolio__slide-switch slide-to2">another website</a>
-						<a href="#!" id="s3" class="portfolio__slide-switch slide-to3">another one website</a>
-				</div>	
-			</div>
 					<a class="portfolio__button--arrow button--arrow" href="#contact"></a>
 			</div>
 		</section>
@@ -151,8 +144,7 @@
 	</footer>
 
 
-	<script src="libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" defer></script>
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit.min.js" defer></script>
 	<script src="js/main.js" defer></script>
 </body>
 </html>
