@@ -170,9 +170,23 @@ h1, h2, h3, h4, h5, h6{
 	white-space: nowrap;
 
 }
-
 .hero__text {
 	margin-top: 110px;
+	position: relative;
+}
+.hero__animation--typing {
+	position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 3.5ch;
+  animation: typing 1.5s steps(4,end) infinite;
+
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+      }
 }
 
 .button {	
@@ -349,12 +363,11 @@ h1, h2, h3, h4, h5, h6{
 	line-height: 23px;
 	letter-spacing: -0.01em;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.7);
 	list-style-type: none;
 
 }
 .portfolio__slide-switch {
-	/*padding-bottom: 3px;*/
 	white-space: nowrap;
 
 
@@ -364,8 +377,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .portfolio__slide-link {
 	text-decoration: none;
-	color: var(--secondarycolor);
+	color: inherit;
 	transition: all 0.1s ease;
+
 
 }
 .portfolio__slide-link:visited {
@@ -385,6 +399,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .uk-active{
 	border-bottom: 2px solid var(--secondarycolor);
+	color: var(--secondarycolor);
 }
 
 
@@ -481,6 +496,65 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	margin-left: auto;
 	margin-top: 56px;
+}
+.animation--fly-out {
+  animation-name: fly-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fly-out {
+  0% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(0.8, 0.8);
+  }
+  95%{
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(0.1, 0.1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0);
+  }
+}
+.animation--fly-in{
+  display: none;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+  justify-content: center;
+  text-align: center;
+  animation-name: fly-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: calc(600px / 2);
+}
+@keyframes fly-in {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0);
+  }
+  10% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(0.1, 0.1);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+  }
 }
 .contact__decoration--me{
 	display: block;

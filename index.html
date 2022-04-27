@@ -38,7 +38,7 @@
 				<div class="hero__flex flex">
 					<div class="hero__content">
 						<h1 class="hero__title">hello world!</h1>
-						<p class="hero__text">welcome to my website..</p>
+						<p class="hero__text">welcome to my website<span class="hero__animation--typing">...</span></p>
 						<a class="button hero__button--contact" href="#contact">contact me</a>
 					</div>
 					<img class="hero__drawing" src="./img/pic_drawing.jpg" alt="drawing">
@@ -125,17 +125,19 @@
 
 		<section class="contact" id="contact">
 			<div class="container contact__container">
-				<h3 class="contact__title">you can get in touch with me:</h3>
-					<form name="contact" class="contact__form" action="" method="post">
-						<input class="contact__input--name" type="text" name="name" placeholder="your name.." required>
-						<input class="contact__input--social" type="text" name="social" placeholder="your mail or social network.." required>
-						<textarea class="contact__input--message" name="message" placeholder="your message.." required ></textarea>
-
-						<button class="button contact__button" name="submit">send</button>
-					</form>
-					<a class="button--arrow contact__button--arrow" href="#top"></a>
+					<h3 class="animation--fly-in">thank you! your message has been sent!</h3>
+				<div class="contact__body">
+					<h3 class="contact__title">you can get in touch with me:</h3>
+						<form name="contact" class="contact__form" action="" method="post">
+							<input class="contact__input--name" type="text" name="name" id="name" placeholder="your name.." required>
+							<input class="contact__input--social" type="text" name="social" id="social" placeholder="your mail or social network.." required>
+							<textarea class="contact__input--message" name="message" id="message" placeholder="your message.." required ></textarea>
+							<button class="button contact__button" name="submit">send</button>
+						</form>
+				</div>
+				<a class="button--arrow contact__button--arrow" href="#top"></a>
 			</div>
-					<img class="contact__decoration--me" src="./img/decoration-elem_me.svg" alt="drawing">
+				<img class="contact__decoration--me" src="./img/decoration-elem_me.svg" alt="drawing">
 		</section>
 	</main>	
 
