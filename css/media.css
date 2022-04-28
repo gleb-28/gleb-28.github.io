@@ -23,6 +23,9 @@
 		align-items: center;
 		justify-content: center;
 	}
+	.flex--start{
+		align-items: flex-start;
+	}
 	.hero__title{
 		margin: 0 auto 2rem;
 	}
@@ -51,7 +54,6 @@
 		text-align: center;
 	}
 	.portfolio__slide-switcher {
-		display: flex;
 		justify-content: center;
 	}
 }
