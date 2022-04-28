@@ -1,4 +1,4 @@
-let switcher = UIkit.switcher('.uk-switcher');
+// let switcher = UIkit.switcher('.uk-switcher');
 
 let ContactBody = document.querySelector('.contact__body');
 let form = document.querySelector('.contact__form');

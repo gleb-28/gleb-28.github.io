@@ -175,6 +175,7 @@ body {
 	text-decoration: none;
 	font-size: 20px;
 	line-height: 0.9em;
+	min-width: 168px;
 	cursor: pointer;
 	transition: all 0.1s ease;
 	white-space: nowrap;
@@ -397,7 +398,6 @@ body {
 .contact__button {
 	margin: 0 auto;
 	border: none;
-	width: 168px;
 }
 .contact__button--arrow{
 	background-image: url(../img/icon_arrow_up_black.svg);
