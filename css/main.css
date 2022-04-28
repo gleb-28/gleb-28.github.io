@@ -362,6 +362,7 @@ body {
 	padding: 10px 8px 8px 8px;
 	border: 4px dashed var(--primarycolor);
 	outline: none;
+	position: relative;
 
 }
 .contact__input--social {
@@ -372,6 +373,8 @@ body {
 	padding: 10px 8px 8px 8px;
 	border: 4px dashed var(--primarycolor);
 	outline: none;
+	position: relative;
+
 }
 .contact__input--message {
 	height: 10rem;
@@ -382,6 +385,8 @@ body {
 	border: 4px dashed var(--primarycolor);
 	resize: none;
 	outline: none;
+	position: relative;
+
 }
 .contact__input--name:focus,
 .contact__input--social:focus,
@@ -399,10 +404,29 @@ body {
 	margin: 0 auto;
 	border: none;
 }
-.contact__button--arrow{
-	background-image: url(../img/icon_arrow_up_black.svg);
-	display: block;
-	margin-left: auto;
+.error{
+	border: 4px dashed var(--accentcolor);
+	animation: swing 1s ease;
+}
+@keyframes swing {
+15% {
+transform: translateX(5px);
+	}
+30% {
+transform: translateX(-5px);
+	}
+50% {
+transform: translateX(3px);
+	}
+65% {
+transform: translateX(-3px);
+	}
+80% {
+transform: translateX(2px);
+	}
+100% {
+transform: translateX(0);
+	}
 }
 .animation--fly-out {
   animation-name: fly-out;
@@ -463,7 +487,12 @@ body {
     transform: scale(1, 1);
   }
 }
-.contact__decoration--me{
+.contact__button--arrow{
+	background-image: url(../img/icon_arrow_up_black.svg);
+	display: block;
+	margin-left: auto;
+}
+.contact__decoration--drawing{
 	display: block;
 	height: 8rem;
 	margin: 2rem 2rem 0 2rem;
