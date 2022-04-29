@@ -57,6 +57,9 @@
 	.portfolio__slider {
 	margin-bottom: 1rem;
 	}
+	.portfolio__media-content--column{
+		flex-direction: column; 
+	}
 }
 @media (max-width : 848px) {
 	.header__lang-switcher{

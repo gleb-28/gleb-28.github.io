@@ -319,15 +319,20 @@ body {
 	justify-content: left;
 }
 .portfolio__media-content{
-	border: 6px dashed var(--secondarycolor);
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
 }
 .portfolio__pic{
+	border: 6px dashed var(--secondarycolor);
 	display: block;
 }
 .portfolio__video{
+	border: 6px dashed var(--secondarycolor);
 	display: block;
 	width: 100%;
 	height: 100%;
+	min-width: 0;
 }
 .portfolio__button--arrow{
 	background-image: url(../img/icon_arrow_down_white.svg);
