@@ -52,7 +52,10 @@
 	}
 	.portfolio__slide-switcher {
 		justify-content: center;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
+	}
+	.portfolio__slider {
+	margin-bottom: 1rem;
 	}
 }
 @media (max-width : 848px) {
@@ -92,6 +95,12 @@
 	}
 	.button--arrow{
 		display: none;
+	}
+	.flex{
+		margin-bottom: 0;
+	}
+	.portfolio__slider {
+	margin-bottom: 0;
 	}
 }
 
