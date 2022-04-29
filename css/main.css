@@ -66,7 +66,7 @@ body {
 	min-height: 100%;
 	max-width: 60rem;
 	margin: 0 auto;
-	padding: 2rem 4rem;
+	padding: 3rem 4rem;
 	text-align: center;
 }
 .header__container{
@@ -136,7 +136,7 @@ body {
 	justify-content: center;
 }
 .hero__flex{
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 }
 .hero__content{	
 	margin-top: -2.7rem;
@@ -152,7 +152,7 @@ body {
 }
 .hero__text {
 	position: relative;
-	margin-bottom: 4.5rem;
+	margin-bottom: 3rem;
 }
 .hero__animation--typing {
 	position: absolute;
@@ -224,32 +224,32 @@ body {
 	color: var(--accentcolor);
 	font-size: 48px;
 	letter-spacing: 0.02em;
-	margin-bottom: 2.4rem;
+	margin-bottom: 1.5rem;
 	margin-left: 3rem;
 	white-space: nowrap;
 }
 .about__flex{
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	gap: 0 3rem;
 }
 .about__photo {
 		border-radius: 3px;
 }
 .text-content{
-	padding: 1.1em 0;
+	padding: 1em 0;
 	text-align: left;
 }
 .about__text-content {
 	max-width: 28rem; 
 }
 .text:not(:last-child) {
-	margin-bottom: 1.1em;
+	margin-bottom: 1em;
 }
 .about__decoration--sign {
 	display: block;
 	position: absolute;
 	right: 0;
-	bottom: 12.6%;
+	bottom: 17%;
 }
 
 
@@ -305,6 +305,7 @@ body {
 }
 .portfolio__slider {
 	padding: 1rem 0;
+	margin-bottom: 1rem;
 }
 .portfolio__slide{
 	border: none !important;
@@ -349,7 +350,7 @@ body {
 	margin-bottom: 1.5rem;
 }
 .contact__form {
-	margin: 0 auto 3rem;
+	margin: 0 auto 2rem;
 	display: flex;
 	flex-direction: column;
 	max-width: 28rem;
@@ -378,7 +379,7 @@ body {
 }
 .contact__input--message {
 	height: 10rem;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	font-family: var(--mainfont);
 	font-size: 20px;
 	padding: 10px 8px 8px 8px;
