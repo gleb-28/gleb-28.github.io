@@ -4,7 +4,8 @@ let ContactBody = document.querySelector('.contact__body');
 let form = document.querySelector('.contact__form');
 
 const validation = new JustValidate('#form', {
-  errorFieldCssClass: 'error',
+  errorFieldCssClass: 'error--field',
+  errorLabelCssClass: 'error--label',
   focusInvalidField: false,
   lockForm: true,
 });
@@ -13,22 +14,23 @@ validation
   .addField('#name', [
     {
       rule: 'required',
-      errorMessage: ' ',
+      errorMessage: 'this field is required:',
     },
   ])
   .addField('#social', [
     {
       rule: 'required',
-      errorMessage: ' ',
+      errorMessage: 'this field is required:',
     },
   ])
   .addField('#message', [
     {
       rule: 'required',
-      errorMessage: ' ',
+      errorMessage: 'this field is required:',
+
     },
   ])
-  
+
   .onSuccess((event) => {
     console.log('Validation passes and form submitted');
     ContactBody.classList.add("animation--fly-out");
@@ -39,6 +41,7 @@ validation
     form.requestSubmit();
      },2000);
   });
+
 
 // form.onsubmit=function(event) { 
 //   event.preventDefault();
