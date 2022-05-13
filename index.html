@@ -8,13 +8,13 @@
 	<title>My Personal Website | Gleb28</title>
 	<meta name="description" content="Personal Website of Gleb 28">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="img/favicon.svg">
-	<meta property="og:image" content="img/favicon.svg">
+	<meta property="og:image" content="img/favicon.png">
 	<meta property="og:image:width" content="620"/>
 	<meta property="og:image:height" content="620"/>
-	<link rel="apple-touch-icon" href="img/favicon.svg" sizes="180x180">
+	<link rel="apple-touch-icon" href="img/favicon.png" sizes="180x180">
 
 	<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
@@ -43,7 +43,7 @@
 				<div class="hero__flex flex">
 					<div class="hero__content">
 						<h1 class="hero__title">hello world!</h1>
-						<p class="hero__text">welcome to my website<span class="hero__animation--typing">...</span></p>
+						<p class="hero__text">Welcome to my website<span class="hero__animation--typing">...</span></p>
 						<a class="button hero__button--contact" href="#contact">contact me</a>
 					</div>
 					<img class="hero__drawing" src="./img/pic_drawing.jpg" alt="drawing">
@@ -76,8 +76,9 @@
 				<div class="portfolio__body">
 					<ul class="portfolio__slide-switcher" data-uk-switcher="connect: .uk-switcher; swiping: true;">
 						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">this website</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">custom shop website</a></li>
 						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">another website</a></li>
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">another one website</a></li>
+
 					</ul>
 				  	<ul class="portfolio__slider uk-switcher">
 				    	<li class="portfolio__slide uk-animation-slide-right">
@@ -93,6 +94,19 @@
 				    		</div>
 				    	</li>
 
+				    	<li class="portfolio__slide uk-animation-slide-right">
+					    	<div class="portfolio__flex flex">
+				    			<div class="text-content portfolio__text-content">
+				    				<p class="portfolio__text text">This is a website for a shop that makes custom kitchens.</p>
+				    				<p class="portfolio__text text">The site is fully responsive and has a beautiful design.</p>
+				    				<p class="portfolio__text text"><a class="portfolio__link" href="http://kuhni.myartsonline.com/" target="_blank">kuhni.myartsonline.com</a></p>				    				
+				    			</div>
+				    			<div class="portfolio__media-content portfolio__media-content--column">
+				    				<video class="portfolio__video" src="img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop loading="lazy"></video>
+				    			</div>
+					    	</div>
+				    	</li>
+
 					    <li class="portfolio__slide uk-animation-slide-right">
 					    	<div class="portfolio__flex flex">
 				    			<div class="text-content portfolio__text-content">
@@ -103,20 +117,7 @@
 				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
 				    			</div>
 				    		</div>
-					    </li>
-
-					    <li class="portfolio__slide uk-animation-slide-right">
-					    	<div class="portfolio__flex flex">
-				    			<div class="text-content portfolio__text-content">
-				    				<p class="portfolio__text text">More axolotls!</p>
-				    			</div>
-				    			<div class="portfolio__media-content portfolio__media-content--column">
-				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
-				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
-				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
-				    			</div>
-					    	</div>
-				    	</li>			 
+					    </li>			 
 					</ul>
 				</div>
 					<a class="portfolio__button--arrow button--arrow" href="#contact"></a>
@@ -126,7 +127,7 @@
 
 		<section class="contact" id="contact">
 			<div class="container contact__container">
-				<h3 class="animation--fly-in">thank you! your message has been sent!</h3>
+				<h3 class="animation--fly-in">Thank you! Your message has been sent!</h3>
 				<div class="contact__body">
 					<h3 class="contact__title">you can get in touch with me:</h3>
 					<form class="contact__form" id="form" action="#" method="post">
