@@ -4,27 +4,52 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>My Personal Website | Gleb28</title>
+	<title>My Personal Website | gleb 28</title>
 	<meta name="description" content="Personal Website of Gleb 28">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- <meta name="keywords" content=""> -->
 
-	<link rel="icon" href="img/favicon.svg">
-	<meta property="og:image" content="img/favicon.png">
-	<meta property="og:image:width" content="620"/>
-	<meta property="og:image:height" content="620"/>
-	<link rel="apple-touch-icon" href="img/favicon.png" sizes="180x180">
+    <!-- <link rel="canonical" href="https://example.com"> -->
 
-	<link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<meta property="og:type" content="website">
+    <meta property="og:title" content="My Personal Website | gleb 28">
+    <meta property="og:description" content="Personal Website of Gleb 28">
+    <meta property="og:image" content="img/favicons/favicon.png">
+    <!-- <meta property="og:url" content="https://example.com"> -->
+
+    <meta name="apple-mobile-web-app-title" content="My Personal Website | gleb 28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
+
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">	
 
 </head>
 
-<body onload="form.reset();">
+<body>
 	<main class="main">
 		<div class="wrapper">
 			<header class="header">
@@ -51,7 +76,7 @@
 				<a class="button--arrow hero__button--arrow" href="#about"></a>
 			</div>
 		</div>
-		
+
 
 		<section class="about" id="about">
 			<div class="container">
@@ -59,9 +84,12 @@
 			<div class="about__flex flex">
 				<img class="about__photo" src="./img/pic_my-photo.jpg" alt="my photo">
 				<div class="about__text-content text-content">
-					<p class="about__text text">My name is Gleb and I am a web developer.</p>
-					<p class="about__text text">Well, I hope so..</p>
-					<p class="about__text text">Here will be some bio, information about my skills, interests, what inspires me the most, my CV and maybe something else.</p>
+					<p class="about__text text">Gleb,<br>Web developer.</p>
+					<p class="about__text text">Responsible, communicative, attentive to&nbsp;details.</p>
+					<ul class="list">
+						<li class="list__item">HTML: BEM, W3C valid and semantic code, optimized images</li>
+						<li class="list__item">CSS: SASS(SCSS), Flexbox, CSS Grid, adaptive and responsive layout</li>
+					</ul>
 				</div>
 			</div>
 			<img class="about__decoration--sign" src="./img/decoration-elem_sign.svg" alt="sign">
@@ -70,40 +98,36 @@
 		</section>
 
 
-		<section class="portfolio" id="portfolio">
+		<section class="portfolio" >
 			<div class="container">
-				<h2 class="portfolio__title">my portfolio:</h2>
+				<h2 class="portfolio__title" id="portfolio">my portfolio:</h2>
 				<div class="portfolio__body">
 					<ul class="portfolio__slide-switcher" data-uk-switcher="connect: .uk-switcher; swiping: true;">
 						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">this website</a></li>
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">custom shop website</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">exhibition website</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">kitchen store website</a></li>
 						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">another website</a></li>
 
 					</ul>
 				  	<ul class="portfolio__slider uk-switcher">
 				    	<li class="portfolio__slide uk-animation-slide-right">
-			    			<div class="portfolio__flex flex flex--start">
-				    			<div class="text-content portfolio__text-content">
-				    				<p class="portfolio__text text">This website is fully designed and created by me.</p>
-				    				<p class="portfolio__text text">Do you like it?</p>
-				    				<p class="portfolio__text text">I Hope you do.</p>
-				    			</div>
-				    			<div class="portfolio__media-content">
-				    				<img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
-				    			</div>
+			    			<div class="portfolio__body">
+				    			<img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" srcset="img/pic_portfolio_this-website.jpg 1920w, img/pic_portfolio_this-website_mobile.jpg 800w" alt="screenshot of this website">
+				    			<span class="portfolio__description">This website is fully designed and created by me.</span>
 				    		</div>
 				    	</li>
 
 				    	<li class="portfolio__slide uk-animation-slide-right">
-					    	<div class="portfolio__flex flex">
-				    			<div class="text-content portfolio__text-content">
-				    				<p class="portfolio__text text">This is a website for a shop that makes custom kitchens.</p>
-				    				<p class="portfolio__text text">The site is fully responsive and has a beautiful design.</p>
-				    				<p class="portfolio__text text"><a class="portfolio__link" href="http://kuhni.myartsonline.com/" target="_blank">kuhni.myartsonline.com</a></p>				    				
-				    			</div>
-				    			<div class="portfolio__media-content portfolio__media-content--column">
-				    				<video class="portfolio__video" src="img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop loading="lazy"></video>
-				    			</div>
+					    	<div class="portfolio__body">
+				    			<video class="portfolio__video" src="img/video_portfolio_van-gog.mp4" muted autoplay playsinline loop></video>
+				    			<span class="portfolio__description"><a class="portfolio__link" href="http://van-gog.myartsonline.com/" target="_blank">van-gog.myartsonline.com</a></span>
+					    	</div>
+				    	</li>
+
+				    	<li class="portfolio__slide uk-animation-slide-right">
+					    	<div class="portfolio__body">
+				    			<video class="portfolio__video" src="img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop></video>
+				    			<span class="portfolio__description"><a class="portfolio__link" href="http://kuhni.myartsonline.com/" target="_blank">kuhni.myartsonline.com</a></span>
 					    	</div>
 				    	</li>
 

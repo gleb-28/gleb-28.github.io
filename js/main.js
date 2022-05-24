@@ -1,7 +1,7 @@
-// let switcher = UIkit.switcher('.uk-switcher');
-
 let ContactBody = document.querySelector('.contact__body');
 let form = document.querySelector('.contact__form');
+
+form.reset();
 
 const validation = new JustValidate('#form', {
   errorFieldCssClass: 'error--field',

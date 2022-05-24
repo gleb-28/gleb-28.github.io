@@ -1,4 +1,4 @@
-@media (max-width : 1300px) {
+@media (max-width : 1200px) {
 	.about__decoration--sign{
 		display: none;
 	}
@@ -51,7 +51,6 @@
 		text-align: center;
 	}
 	.portfolio__slide-switcher {
-		justify-content: center;
 		margin-bottom: 2rem;
 	}
 	.portfolio__slider {
@@ -62,27 +61,36 @@
 	}
 }
 @media (max-width : 848px) {
-	.header__lang-switcher{
+	.header__lang-switcher {
 		position: static;
 		display: block;
 		margin: 1rem auto;
 	}
 }
 @media (max-width : 809px) {
-	html{
+	html {
 		font-size: 18px;
 	}
-	.header{
+	.header {
 		height: 16rem;
 	} 
-	.hero__title{
+	.hero__title {
 		font-size: 48px;
+	}
+	.text-content {
+		font-size: 18px;
+		padding: 1em 0;
+		text-align: left;
 	}
 }
 
 @media (max-width : 639px){
 	.portfolio__slide-switcher{
 		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
+	}
+	.portfolio__slide-switch {
+	word-spacing: -0.3rem;
 	}
 }
 
