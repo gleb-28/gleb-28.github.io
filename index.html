@@ -42,8 +42,8 @@
 	<meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
 
-  <link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-700.woff2" as="font" type="font/woff2">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
 
@@ -74,7 +74,10 @@
 						<p class="hero__text">Welcome to my website<span class="hero__animation--typing">...</span></p>
 						<a class="button hero__button--contact" href="#contact">contact me</a>
 					</div>
-					<img class="hero__drawing" src="./img/pic_drawing.jpg" alt="drawing">
+					<picture>
+					  <source srcset="img/pic_drawing.webp" type="image/webp">
+					  <img class="hero__drawing" src="img/pic_drawing.jpg" alt="drawing">
+					</picture> 
 				</div>
 				<a class="button--arrow hero__button--arrow" href="#about"></a>
 			</div>
@@ -85,7 +88,10 @@
 			<div class="container">
 			<h2 class="about__title">about me:</h2>
 			<div class="about__flex flex">
-				<img class="about__photo" src="./img/pic_my-photo.jpg" alt="my photo">
+				<picture>
+				  <source srcset="img/pic_my-photo.webp" type="image/webp">
+				  <img class="about__photo" src="img/pic_my-photo.jpg" alt="my photo">
+				</picture> 
 				<div class="about__text-content text-content">
 					<p class="about__text text">Gleb,<br>Web developer.</p>
 					<p class="about__text text">Responsible, communicative, attentive to&nbsp;details.</p>
@@ -95,7 +101,7 @@
 					</ul>
 				</div>
 			</div>
-			<img class="about__decoration--sign" src="./img/decoration-elem_sign.svg" alt="sign">
+			<img class="about__decoration--sign" src="img/decoration-elem_sign.svg" alt="sign">
 			<a class="button--arrow about__button--arrow" href="#portfolio"></a>
 			</div>
 		</section>
@@ -115,7 +121,10 @@
 				  	<ul class="portfolio__slider uk-switcher">
 				    	<li class="portfolio__slide uk-animation-slide-right">
 			    			<div class="portfolio__body">
-				    			<img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
+				    			<picture>
+				    			  <source srcset="img/pic_portfolio_this-website.webp" type="image/webp">
+				    			  <img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
+				    			</picture> 
 				    			<span class="portfolio__description">This website is fully designed and created by me.</span>
 				    		</div>
 				    	</li>
