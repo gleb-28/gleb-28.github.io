@@ -30,8 +30,8 @@ img{
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/cousine-v25-latin_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cousine-v25-latin_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/cousine-v25-latin_cyrillic-ext-regular.woff2') format('woff2'),
+       url('../fonts/cousine-v25-latin_cyrillic-ext-regular.woff') format('woff');
 }
 
 /* cousine-700 - latin_cyrillic-ext */
@@ -41,8 +41,8 @@ img{
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('../fonts/cousine-v25-latin_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cousine-v25-latin_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/cousine-v25-latin_cyrillic-ext-700.woff2') format('woff2'),
+       url('../fonts/cousine-v25-latin_cyrillic-ext-700.woff') format('woff');
 }
 
 /* cousine-italic - latin_cyrillic-ext */
@@ -52,8 +52,8 @@ img{
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/cousine-v25-latin_cyrillic-ext-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cousine-v25-latin_cyrillic-ext-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/cousine-v25-latin_cyrillic-ext-italic.woff2') format('woff2'),
+       url('../fonts/cousine-v25-latin_cyrillic-ext-italic.woff') format('woff');
 }
 
 /* cousine-700italic - latin_cyrillic-ext */
@@ -63,8 +63,8 @@ img{
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('../fonts/cousine-v25-latin_cyrillic-ext-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cousine-v25-latin_cyrillic-ext-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/cousine-v25-latin_cyrillic-ext-700italic.woff2') format('woff2'),
+       url('../fonts/cousine-v25-latin_cyrillic-ext-700italic.woff') format('woff');
 }
 
 
@@ -243,6 +243,7 @@ body {
 	margin-top: -9rem;
 	display: block;
 	border-radius: 2px;
+	min-width: 400px;
 }
 .button--arrow {
 	width: 1rem;
@@ -279,6 +280,7 @@ body {
 }
 .about__photo {
 		border-radius: 3px;
+		min-width: 420px;
 }
 .text-content {
 	font-size: 22px;
