@@ -34,6 +34,7 @@
 	}
 	.hero__drawing{
 		margin: 0 auto;
+		min-width: unset;
 	}
 	.about__title{
 		margin: 0 auto 0.5rem;
@@ -46,6 +47,7 @@
 	}
 	.about__photo {
 		margin: 0 auto;
+		min-width: unset;
 	}
 	.portfolio__title{
 		text-align: center;
