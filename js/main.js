@@ -1,3 +1,22 @@
+// dropdown
+function dropdownFunction() {
+  document.querySelector(".dropdown__list").classList.toggle("dropdown__list--visible");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown__button')) {
+    var dropdowns = document.getElementsByClassName("dropdown__list");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('dropdown__list--visible')) {
+        openDropdown.classList.remove('dropdown__list--visible');
+      };
+    };
+  };
+};
+
+// form
 let ContactBody = document.querySelector('.contact__body');
 let form = document.querySelector('.contact__form');
 

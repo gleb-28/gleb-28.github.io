@@ -7,45 +7,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>My Personal Website | gleb 28</title>
-	<meta name="description" content="Personal Website of Gleb 28">
+	<title>Мой личный сайт | gleb 28</title>
+	<meta name="description" content="Личный сайт Gleb 28">
 	<!-- <meta name="keywords" content=""> -->
 
-    <!-- <link rel="canonical" href="https://example.com"> -->
+  <!-- <link rel="canonical" href="https://example.com"> -->
 
 	<meta property="og:type" content="website">
-    <meta property="og:title" content="My Personal Website | gleb 28">
-    <meta property="og:description" content="Personal Website of Gleb 28">
-    <meta property="og:image" content="../img/favicons/favicon.png">
-    <!-- <meta property="og:url" content="https://example.com"> -->
+  <meta property="og:title" content="My Personal Website | gleb 28">
+  <meta property="og:description" content="Personal Website of Gleb 28">
+  <meta property="og:image" content="img/favicons/favicon.png">
+  <!-- <meta property="og:url" content="https://example.com"> -->
 
-    <meta name="apple-mobile-web-app-title" content="My Personal Website | gleb 28">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My Personal Website | gleb 28">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="../img/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="../img/favicons/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
-
+  <meta name="format-detection" content="address=no">
+  
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
-
-	<link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/cousine-v25-latin_cyrillic-ext-700.woff2" as="font" type="font/woff2">
 
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/media.css">	
@@ -55,25 +52,133 @@
 <body>
 	<main class="main">
 		<div class="wrapper">
-			<header class="header" style="height: 250px;">
+			<header class="header">
 				<div class="container header__container">
 					<img class="header__logo" src="../img/logo.svg" alt="logo">
-					<div class="header__lang-switcher">
-  						<button class="lang-switcher__button" type="button"></button>
-  						<ul class="lang-switcher__wrapper" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-top-small;">
+					<div class="header__lang-switcher dropdown">
+  						<button class="lang-switcher__button dropdown__button" type="button" onclick="dropdownFunction()"></button>
+  						<ul class="lang-switcher__list dropdown__list">
 						    <li><a class="lang-switcher__link" href="../index.html">en</a></li>
-						    <li><a class="lang-switcher__link uk-disabled" href="#">ru</a></li>
+						    <li><span class="lang-switcher__link disabled">ru</span></li>
   						</ul>
 					</div>
 				</div>
 			</header>
+			<div class="hero">
+				<div class="hero__flex flex">
+					<div class="hero__content">
+						<h1 class="hero__title">привет мир!</h1>
+						<p class="hero__text">Добро пожаловать на&nbsp;мой сайт<span class="hero__animation--typing">...</span></p>
+						<a class="button hero__button--contact" href="#contact">написать мне</a>
+					</div>
+					<picture>
+					  <source srcset="../img/pic_drawing.webp" type="image/webp">
+					  <img class="hero__drawing" src="../img/pic_drawing.jpg" alt="рисунок">
+					</picture> 
+				</div>
+				<a class="button--arrow hero__button--arrow" href="#about"></a>
+			</div>
 		</div>
-		<div class="container">
-			<p>Скоро будет...</p>
-		</div>
+
+
+		<section class="about" id="about">
+			<div class="container">
+			<h2 class="about__title">обо мне:</h2>
+			<div class="about__flex flex">
+				<picture>
+				  <source srcset="../img/pic_my-photo.webp" type="image/webp">
+				  <img class="about__photo" src="../img/pic_my-photo.jpg" alt="мое фото">
+				</picture> 
+				<div class="about__text-content text-content">
+					<p class="about__text text">Глеб,<br>Веб-разработчик.</p>
+					<p class="about__text text">Ответственный, коммуникабельный, внимательный к&nbsp;деталям.</p>
+					<ul class="list">
+						<li class="list__item">HTML: БЭМ, валидный семантический код по&nbsp;W3C, оптимизированные изображения</li>
+						<li class="list__item">CSS: SASS(SCSS), Flexbox, CSS Grid, адаптивно-отзывчивая вёрстка</li>
+					</ul>
+				</div>
+			</div>
+			<img class="about__decoration--sign" src="../img/decoration-elem_sign.svg" alt="подпись">
+			<a class="button--arrow about__button--arrow" href="#portfolio"></a>
+			</div>
+		</section>
+
+		<section class="portfolio" >
+			<div class="container">
+				<h2 class="portfolio__title" id="portfolio">портфолио:</h2>
+				<div class="portfolio__body">
+					<ul class="portfolio__slide-switcher" data-uk-switcher="connect: .uk-switcher; swiping: true;">
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">этот сайт</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">сайт выставки</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">сайт магазина кухонь</a></li>
+						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">другой сайт</a></li>
+
+					</ul>
+				  	<ul class="portfolio__slider uk-switcher">
+				    	<li class="portfolio__slide uk-animation-slide-right">
+			    			<div class="portfolio__body">
+				    			<picture>
+				    			  <source srcset="../img/pic_portfolio_this-website.webp" type="image/webp">
+				    			  <img class="portfolio__pic" src="../img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
+				    			</picture> 
+				    			<span class="portfolio__description">Этот сайт был полностью разработан и создан мной.</span>
+				    		</div>
+				    	</li>
+
+				    	<li class="portfolio__slide uk-animation-slide-right">
+					    	<div class="portfolio__body">
+				    			<video class="portfolio__video" src="../img/video_portfolio_van-gog.mp4" muted autoplay playsinline loop></video>
+				    			<span class="portfolio__description"><a class="portfolio__link" href="https://van-gog.surge.sh/" target="_blank">van-gog.surge.sh</a></span>
+					    	</div>
+				    	</li>
+
+				    	<li class="portfolio__slide uk-animation-slide-right">
+					    	<div class="portfolio__body">
+				    			<video class="portfolio__video" src="../img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop></video>
+				    			<span class="portfolio__description"><a class="portfolio__link" href="https://kuhni.surge.sh/" target="_blank">kuhni.surge.sh</a></span>
+					    	</div>
+				    	</li>
+
+					    <li class="portfolio__slide uk-animation-slide-right">
+					    	<div class="portfolio__flex flex">
+				    			<div class="text-content portfolio__text-content">
+				    				<p class="portfolio__text text">Тут будут мои будущие проекты.</p>
+				    				<p class="portfolio__text text">А&nbsp;пока веселый аксолотль играет на&nbsp;пианино под водой.</p>
+				    			</div>
+				    			<div class="portfolio__media-content">
+				    				<video class="portfolio__video" src="../img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+				    			</div>
+				    		</div>
+					    </li>			 
+					</ul>
+				</div>
+					<a class="portfolio__button--arrow button--arrow" href="#contact"></a>
+			</div>
+		</section>
+
+
+		<section class="contact" id="contact">
+			<div class="container contact__container">
+				<h3 class="animation--fly-in">Спасибо! Ваше сообщение отправлено!</h3>
+				<div class="contact__body">
+					<h3 class="contact__title">вы можете связаться со&nbsp;мной:</h3>
+					<form class="contact__form" id="form" action="#" method="post">
+						<label class="contact__label" for="name">
+						<input class="contact__input--name form__input form-control" type="text" name="name" id="name" placeholder="имя.."></label>
+						<label class="contact__label" for="social">
+						<input class="contact__input--social form__input form-control" type="text" name="social" id="social" placeholder="почта или социальная сеть.."></label>
+						<label class="contact__label" for="message">
+						<textarea class="contact__input--message form__textarea form-control" name="message" id="message" placeholder="сообщение.."></textarea></label>
+						<button class="contact__button button" id="submit-btn" name="submit">отправить</button>
+					</form>
+				</div>
+				<a class="button--arrow contact__button--arrow" href="#top"></a>
+			</div>
+				<img class="contact__decoration--drawing" src="../img/decoration-elem_me.svg" alt="рисунок">
+		</section>
 	</main>	
 
-	<footer class="footer" > 
+	<footer class="footer">
 		<small class="footer__text">&copy; GLEB28.com, 2022</small>
 	</footer>
 
@@ -83,5 +188,4 @@
 	<script src="../js/main.js" defer></script>
 </body>
 </html>
-
 

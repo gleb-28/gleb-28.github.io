@@ -55,10 +55,10 @@
 			<header class="header">
 				<div class="container header__container">
 					<img class="header__logo" src="./img/logo.svg" alt="logo">
-					<div class="header__lang-switcher">
-  						<button class="lang-switcher__button" type="button"></button>
-  						<ul class="lang-switcher__wrapper" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-top-small;">
-						    <li><a class="lang-switcher__link uk-disabled" href="#">en</a></li>
+					<div class="header__lang-switcher dropdown">
+  						<button class="lang-switcher__button dropdown__button" type="button" onclick="dropdownFunction()"></button>
+  						<ul class="lang-switcher__list dropdown__list">
+						    <li><span class="lang-switcher__link disabled">en</span></li>
 						    <li><a class="lang-switcher__link" href="ru/index.html">ru</a></li>
   						</ul>
 					</div>

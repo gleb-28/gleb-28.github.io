@@ -142,12 +142,27 @@ body {
 .lang-switcher__button:active {
 	opacity: 0.5;
 }
-.lang-switcher__wrapper {
+.lang-switcher__list {
 	text-align: center;
+	margin-top: 0.5rem;
 	padding: 2px;
 	list-style-type: none;
 	border-radius: 2px;
-	min-width: 2rem;
+	width: 2rem;
+	background-color: var(--secondarycolor);
+}
+.dropdown__list {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-15%);
+	transition: transform 0.1s ease;
+	position: relative;
+	z-index: 28;
+}
+.dropdown__list--visible {
+	visibility: visible;
+	opacity: 1;
+	transform: unset;
 }
 .lang-switcher__link {
 	display: inline-block;
@@ -167,8 +182,14 @@ body {
 .lang-switcher__link:active {
 	color: inherit;
 }
-.uk-disabled{
+.disabled {
 	color: rgba(0, 0, 0, 0.5);
+	cursor: default;
+}
+.disabled:hover {
+	background-color: unset;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: default;
 }
 .hero {
 	text-align: center;
