@@ -125,6 +125,7 @@ body {
 	position: absolute;
 	top: 1rem;
 	right: 4rem;
+	user-select: none;
 }
 .lang-switcher__button {
 	width: 24px;
