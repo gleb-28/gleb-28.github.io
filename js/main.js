@@ -57,8 +57,14 @@ validation
       document.querySelector('.animation--fly-in').style.display = "flex";
      },3000);
     setTimeout(function(){
-    form.requestSubmit();
-     },2000);
+    // form.requestSubmit();
+
+      var alerted = localStorage.getItem('alerted') || '';
+      if (alerted != 'yes') {
+      alert("This is a test form! The message has not been sent!");
+      localStorage.setItem('alerted','yes');
+      }
+    },7000);
   });
 
 
