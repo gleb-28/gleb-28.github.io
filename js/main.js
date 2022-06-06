@@ -1,9 +1,12 @@
 // dropdown
-function dropdownFunction() {
+const dropdownButton = document.querySelector('.dropdown__button');
+const body = document.querySelector('body');
+
+dropdownButton.addEventListener('click', function() {
   document.querySelector(".dropdown__list").classList.toggle("dropdown__list--visible");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
+});
+
+body.addEventListener('click', function() {
   if (!event.target.matches('.dropdown__button')) {
     var dropdowns = document.getElementsByClassName("dropdown__list");
     var i;
@@ -14,7 +17,7 @@ window.onclick = function(event) {
       };
     };
   };
-};
+});
 
 // form
 let ContactBody = document.querySelector('.contact__body');
@@ -58,12 +61,7 @@ validation
      },3000);
     setTimeout(function(){
     // form.requestSubmit();
-
-      var alerted = localStorage.getItem('alerted') || '';
-      if (alerted != 'yes') {
-      alert("This is a test form! The message has not been sent!");
-      localStorage.setItem('alerted','yes');
-      }
+    alert("This is a test form! The message has not been sent!");
     },7000);
   });
 
