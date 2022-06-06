@@ -88,6 +88,12 @@
 		padding: 1em 0;
 		text-align: left;
 	}
+	.lang-switcher__list {
+		width: 2.5rem;
+	}
+	.lang-switcher__link {
+	font-size: 24px;
+	}
 }
 
 @media (max-width : 639px){
