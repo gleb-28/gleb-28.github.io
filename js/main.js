@@ -19,6 +19,37 @@ body.addEventListener('click', function() {
   };
 });
 
+
+//tabs
+const tabsBtn = document.querySelectorAll(".tabs__button");
+const tabsItem = document.querySelectorAll(".tabs__item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('tabs__button--active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('tabs__button--active');
+            });
+    
+            tabsItem.forEach(function(item) {
+                item.classList.remove('tabs__item--active');
+            });
+    
+            currentBtn.classList.add('tabs__button--active');
+            currentTab.classList.add('tabs__item--active');
+        }
+    });
+}
+
+document.querySelector('.tabs__button').click();
+
+
 // form
 let ContactBody = document.querySelector('.contact__body');
 let form = document.querySelector('.contact__form');

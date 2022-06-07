@@ -42,8 +42,6 @@
 	<meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css"/>
-
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/media.css">	
 
@@ -103,43 +101,43 @@
 			</div>
 		</section>
 
-		<section class="portfolio" >
+		<section class="portfolio">
 			<div class="container">
 				<h2 class="portfolio__title" id="portfolio">портфолио:</h2>
 				<div class="portfolio__body">
-					<ul class="portfolio__slide-switcher" data-uk-switcher="connect: .uk-switcher; swiping: true;">
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">этот сайт</a></li>
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">сайт выставки</a></li>
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">сайт магазина кухонь</a></li>
-						<li class="portfolio__slide-switch"><a href="#" class="portfolio__slide-link">другой сайт</a></li>
-
+					<ul class="portfolio__tabs tabs">
+						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_1">этот сайт</button></li>
+						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_2">сайт выставки</button></li>
+						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_3">сайт магазина кухонь</button></li>
+						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_4">другой сайт</button></li>
+						
 					</ul>
-				  	<ul class="portfolio__slider uk-switcher">
-				    	<li class="portfolio__slide uk-animation-slide-right">
+				  	<ul class="tabs__content">
+				    	<li class="tabs__item" id="tab_1">
 			    			<div class="portfolio__body">
 				    			<picture>
 				    			  <source srcset="../img/pic_portfolio_this-website.webp" type="image/webp">
-				    			  <img class="portfolio__pic" src="../img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
+				    			  <img class="portfolio__pic" src="../img/pic_portfolio_this-website.jpg" alt="скриншот этого сайта">
 				    			</picture> 
 				    			<span class="portfolio__description">Этот сайт был полностью разработан и создан мной.</span>
 				    		</div>
 				    	</li>
 
-				    	<li class="portfolio__slide uk-animation-slide-right">
+				    	<li class="tabs__item" id="tab_2">
 					    	<div class="portfolio__body">
 				    			<video class="portfolio__video" src="../img/video_portfolio_van-gog.mp4" muted autoplay playsinline loop></video>
 				    			<span class="portfolio__description"><a class="portfolio__link" href="https://van-gog.surge.sh/" target="_blank">van-gog.surge.sh</a></span>
 					    	</div>
 				    	</li>
 
-				    	<li class="portfolio__slide uk-animation-slide-right">
+				    	<li class="tabs__item" id="tab_3">
 					    	<div class="portfolio__body">
 				    			<video class="portfolio__video" src="../img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop></video>
 				    			<span class="portfolio__description"><a class="portfolio__link" href="https://kuhni.surge.sh/" target="_blank">kuhni.surge.sh</a></span>
 					    	</div>
 				    	</li>
 
-					    <li class="portfolio__slide uk-animation-slide-right">
+					    <li class="tabs__item" id="tab_4">
 					    	<div class="portfolio__flex flex">
 				    			<div class="text-content portfolio__text-content">
 				    				<p class="portfolio__text text">Тут будут мои будущие проекты.</p>
@@ -183,7 +181,6 @@
 	</footer>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit.min.js" defer></script>
 	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
 	<script src="../js/main.js" defer></script>
 </body>

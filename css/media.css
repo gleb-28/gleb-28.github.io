@@ -164,10 +164,10 @@
 	.button:active {
 		box-shadow: none;
 	}
-	.portfolio__slide-link:hover {
+	.tabs__button:hover {
 		text-shadow: 3px 3px 1px #D43024;
 	}
-	.portfolio__slide-link:active {
+	.tabs__button:active {
 		text-shadow: none;
 	}
 }
