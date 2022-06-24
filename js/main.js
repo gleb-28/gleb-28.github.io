@@ -1,22 +1,18 @@
 // dropdown
-const dropdownButton = document.querySelector('.dropdown__button');
+const dropdownButtons = document.querySelectorAll('.dropdown__button');
 const body = document.querySelector('body');
 
-dropdownButton.addEventListener('click', function() {
-  document.querySelector(".dropdown__list").classList.toggle("dropdown__list--visible");
-});
+dropdownButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.nextElementSibling.classList.toggle("dropdown__list--visible");
 
-body.addEventListener('click', function() {
-  if (!event.target.matches('.dropdown__button')) {
-    var dropdowns = document.getElementsByClassName("dropdown__list");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('dropdown__list--visible')) {
-        openDropdown.classList.remove('dropdown__list--visible');
+    body.addEventListener('click', () => {
+      if (button.nextElementSibling.classList.contains('dropdown__list--visible') &&
+        !event.target.matches('.dropdown__button')) {
+        button.nextElementSibling.classList.remove('dropdown__list--visible');
       };
-    };
-  };
+    });
+  });
 });
 
 
