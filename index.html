@@ -93,6 +93,7 @@
 					<ul class="list">
 						<li class="list__item">HTML: BEM, W3C valid and semantic code, optimized images</li>
 						<li class="list__item">CSS: SASS(SCSS), Flexbox, CSS Grid, adaptive and responsive layout</li>
+						<li class="list__item">JavaScript</li>
 					</ul>
 				</div>
 			</div>
@@ -106,50 +107,52 @@
 			<div class="container">
 				<h2 class="portfolio__title" id="portfolio">my portfolio:</h2>
 				<div class="portfolio__body">
-					<ul class="portfolio__tabs tabs">
-						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_1">this website</button></li>
-						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_2">exhibition website</button></li>
-						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_3">kitchen store</button></li>
-						<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_4">another website</button></li>
-						
-					</ul>
-				  	<ul class="tabs__content">
-				    	<li class="tabs__item" id="tab_1">
-			    			<div class="portfolio__body">
-				    			<picture>
-				    			  <source srcset="img/pic_portfolio_this-website.webp" type="image/webp">
-				    			  <img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
-				    			</picture> 
-				    			<span class="portfolio__description">This website is fully designed and created by me.</span>
-				    		</div>
-				    	</li>
+					<div class="tabs-wrapper">
+						<ul class="portfolio__tabs tabs">
+							<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_1">this website</button></li>
+							<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_2">exhibition website</button></li>
+							<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_3">kitchen store</button></li>
+							<li class="tabs__tab"><button class="tabs__button" data-tab="#tab_4">another website</button></li>
+							
+						</ul>
+					  	<ul class="tabs__content">
+					    	<li class="tabs__item" id="tab_1">
+				    			<div class="portfolio__body">
+					    			<picture>
+					    			  <source srcset="img/pic_portfolio_this-website.webp" type="image/webp">
+					    			  <img class="portfolio__pic" src="img/pic_portfolio_this-website.jpg" alt="screenshot of this website">
+					    			</picture> 
+					    			<span class="portfolio__description">This website is fully designed and created by me.</span>
+					    		</div>
+					    	</li>
 
-				    	<li class="tabs__item" id="tab_2">
-					    	<div class="portfolio__body">
-				    			<video class="portfolio__video" src="img/video_portfolio_van-gog.mp4" muted autoplay playsinline loop></video>
-				    			<span class="portfolio__description"><a class="portfolio__link" href="https://van-gog.surge.sh/" target="_blank">van-gog.surge.sh</a></span>
-					    	</div>
-				    	</li>
+					    	<li class="tabs__item" id="tab_2">
+						    	<div class="portfolio__body">
+					    			<video class="portfolio__video" src="img/video_portfolio_van-gog.mp4" muted autoplay playsinline loop></video>
+					    			<span class="portfolio__description"><a class="portfolio__link" href="https://van-gog.surge.sh/" target="_blank">van-gog.surge.sh</a></span>
+						    	</div>
+					    	</li>
 
-				    	<li class="tabs__item" id="tab_3">
-					    	<div class="portfolio__body">
-				    			<video class="portfolio__video" src="img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop></video>
-				    			<span class="portfolio__description"><a class="portfolio__link" href="https://kuhni.surge.sh/" target="_blank">kuhni.surge.sh</a></span>
-					    	</div>
-				    	</li>
+					    	<li class="tabs__item" id="tab_3">
+						    	<div class="portfolio__body">
+					    			<video class="portfolio__video" src="img/video_portfolio_kuhni.mp4" muted autoplay playsinline loop></video>
+					    			<span class="portfolio__description"><a class="portfolio__link" href="https://kuhni.surge.sh/" target="_blank">kuhni.surge.sh</a></span>
+						    	</div>
+					    	</li>
 
-					    <li class="tabs__item" id="tab_4">
-					    	<div class="portfolio__flex flex">
-				    			<div class="text-content portfolio__text-content">
-				    				<p class="portfolio__text text">Here will be my future projects.</p>
-				    				<p class="portfolio__text text">But for now, happy axolotl is playing the piano underwater.</p>
-				    			</div>
-				    			<div class="portfolio__media-content">
-				    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
-				    			</div>
-				    		</div>
-					    </li>			 
-					</ul>
+						    <li class="tabs__item" id="tab_4">
+						    	<div class="portfolio__flex flex">
+					    			<div class="text-content portfolio__text-content">
+					    				<p class="portfolio__text text">Here will be my future projects.</p>
+					    				<p class="portfolio__text text">But for now, happy axolotl is playing the piano underwater.</p>
+					    			</div>
+					    			<div class="portfolio__media-content">
+					    				<video class="portfolio__video" src="img/video_axolotl.mp4" muted autoplay playsinline loop></video>
+					    			</div>
+					    		</div>
+						    </li>			 
+						</ul>
+					</div>
 				</div>
 					<a class="portfolio__button--arrow button--arrow" href="#contact"></a>
 			</div>

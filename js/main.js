@@ -17,33 +17,34 @@ dropdownButtons.forEach(button => {
 
 
 //tabs
-const tabsBtn = document.querySelectorAll(".tabs__button");
-const tabsItem = document.querySelectorAll(".tabs__item");
+const tabsWrappers = document.querySelectorAll('.tabs-wrapper');
 
-tabsBtn.forEach(onTabClick);
+tabsWrappers.forEach(tabsWrapper => {
+    const tabsBtns = tabsWrapper.querySelectorAll('.tabs__button');
+    const tabsItems = tabsWrapper.querySelectorAll('.tabs__item');
 
-function onTabClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
+    tabsBtns.forEach(tabBtn => {
+        tabBtn.addEventListener('click', () => {
+            let tabId = tabBtn.getAttribute('data-tab');
+            let currentItem = tabsWrapper.querySelector(tabId);
 
-        if( ! currentBtn.classList.contains('tabs__button--active') ) {
-            tabsBtn.forEach(function(item) {
-                item.classList.remove('tabs__button--active');
-            });
-    
-            tabsItem.forEach(function(item) {
-                item.classList.remove('tabs__item--active');
-            });
-    
-            currentBtn.classList.add('tabs__button--active');
-            currentTab.classList.add('tabs__item--active');
-        }
+            if (!tabBtn.classList.contains('tabs__button--active')) {
+                tabsBtns.forEach(tabBtn => {
+                    tabBtn.classList.remove('tabs__button--active');
+                });
+
+                tabsItems.forEach(item => {
+                    item.classList.remove('tabs__item--active');
+                });
+
+                tabBtn.classList.add('tabs__button--active');
+                currentItem.classList.add('tabs__item--active');
+            };
+        });
     });
-}
 
-document.querySelector('.tabs__button').click();
+    tabsWrapper.querySelector('.tabs__button').click();
+});
 
 
 // form
