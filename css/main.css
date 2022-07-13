@@ -95,6 +95,10 @@ body {
 	line-height: 1.1;
 }
 
+.visually-hidden {
+	position: fixed;
+	opacity: 0;
+}
 
 .main {
 	display: flex;
@@ -273,7 +277,7 @@ body {
 	border-radius: 2px;
 	min-width: 400px;
 }
-.button--arrow {
+.arrow-button {
 	width: 1rem;
 	height: 1rem;
 	background-image: url(../img/icon_arrow_down_black.svg);
@@ -282,10 +286,10 @@ body {
 	background-size: cover;
 	transition: all 0.1s ease;
 }
-.button--arrow:hover {
+.arrow-button:hover {
 	transform: scale(1.1);
 }
-.button--arrow:active {
+.arrow-button:active {
 	transform: scale(0.7);
 }
 
@@ -455,7 +459,7 @@ body {
 	height: 100%;
 	min-width: 0;
 }
-.portfolio__button--arrow {
+.portfolio__arrow-button {
 	background-image: url(../img/icon_arrow_down_white.svg);
 	display: block;
 	margin: 0 auto;
@@ -626,12 +630,12 @@ transform: translateX(0);
     transform: scale(1, 1);
   }
 }
-.contact__button--arrow{
+.contact__arrow-button {
 	background-image: url(../img/icon_arrow_up_black.svg);
 	display: block;
 	margin-left: auto;
 }
-.contact__decoration--drawing{
+.contact__decoration--drawing {
 	display: block;
 	height: 8rem;
 	margin: 2rem 2rem 0 2rem;
